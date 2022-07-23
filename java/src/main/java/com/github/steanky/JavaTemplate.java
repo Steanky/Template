@@ -1,5 +1,4 @@
 package com.github.steanky;
 
-public
-class JavaTemplate {
+public class JavaTemplate {
 }

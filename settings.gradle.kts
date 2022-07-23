@@ -5,6 +5,7 @@ if (localSettings.exists()) {
     apply(localSettings)
 }
 
+
 sequenceOf("java").forEach {
     val projectDirectory = file(it)
     include(":${rootProject.name}-$it")
@@ -17,4 +18,3 @@ sequenceOf("java").forEach {
         Runtime.getRuntime().exec("git add ${gitignore.absoluteFile}")
     }
 }
-
