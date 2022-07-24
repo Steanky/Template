@@ -43,6 +43,10 @@ plugins {
 
 One can edit the plugin scripts in `buildSrc` to apply build configuration changes globally across all modules that use them.
 
+`java-conventions` specifies the Maven public repository, as well as some dependencies: junit-jupiter, mockito, and jetbrains-annotations. It also configures the `Jar` task to copy the module or project license into any built jars.
+
+`java-library` supplies everything in `java-conventions`, with the addition of also producing javadoc and source jars.
+
 ### Gradle Modules
 
 By default, there is a single module, `template-java`, that is included by default. Module names should be prefixed by the root project name (`template` being the default). Module *directory* names should not have this prefix.
